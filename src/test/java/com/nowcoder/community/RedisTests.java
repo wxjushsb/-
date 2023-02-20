@@ -1,5 +1,6 @@
 package com.nowcoder.community;
 
+import com.nowcoder.community.entity.Student;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -130,6 +131,20 @@ public class RedisTests {
             }
         });
         System.out.println(obj);
+    }
+    @Test
+    public void testtt() {
+        Student student = new Student();
+        Student student1 = student.setAge(19);
+        System.out.println(student1);
+
+    }
+
+    @Test
+    public void tetst(){
+        String s = "dccshidcs";
+        s.replaceAll("c","k");
+        System.out.println(s);
     }
 
 }
